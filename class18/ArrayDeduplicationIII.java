@@ -13,6 +13,8 @@ public class ArrayDeduplicationIII {
 		boolean flag = false;
 		for(int i = 1; i <array.length; i++){
 			if(array[i] == array[end]){
+				flag = true;
+			} else if(flag == true){
 				//if there is duplicate, and flag is set,
 				//array[end] should not be included in the valid subarray,
 				//and we can just replace it with array[i] since next
