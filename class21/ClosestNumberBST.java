@@ -15,10 +15,10 @@ public class ClosestNumberBST {
 				if (Math.abs(root.key - target) < Math.abs(result - target)){
 					result = root.key;
 				}else if (root.key < target){
-					result = root.right;
+					root = root.right;
 					
 				}else{
-					result = root.left;
+					root = root.left;
 				}
 			}
 	
