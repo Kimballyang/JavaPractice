@@ -12,7 +12,7 @@ public class BinaryTreePathSumToTarget {
 		}
 		// pass down the prefix of the path.
 		List<TreeNode> path = new ArrayList<TreeNode>();
-		return helper(root.path,sum);
+		return helper(root,path,sum);
 		
 	}
 	
